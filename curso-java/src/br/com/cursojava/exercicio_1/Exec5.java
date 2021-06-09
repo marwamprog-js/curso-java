@@ -16,12 +16,12 @@ public class Exec5 {
 		
 		
 		System.out.println("Informe a medida em metros.: ");
-		double metro = scan.nextDouble();
+		double metros = scan.nextDouble();
 		
-		double valorCentimetros = metro * convercao;
+		double valorCentimetros = metros * convercao;
 		
-		System.out.println("Valor em METROS.: " + metro);
-		System.out.println("Valor em CENTIMETROS.: " + valorCentimetros);
+		System.out.println(metros + "m é igual a " + valorCentimetros + "cm");
+		
 	}
 
 }

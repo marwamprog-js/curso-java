@@ -47,13 +47,15 @@ public class Exec15 {
 		double irDescontado = (IR * salarioBruto);
 		double inssDescontado = (INSS * salarioBruto);
 		double sincatoDescontado = (SINDICATO * salarioBruto);
+		double totalDescontos = irDescontado + inssDescontado + sincatoDescontado;
 		
-		double salarioLiquido = salarioBruto - (irDescontado + inssDescontado + sincatoDescontado);
+		double salarioLiquido = salarioBruto - totalDescontos;
 		
 		System.out.println("Salario Bruto.: " + salarioBruto);
 		System.out.println(".....Desconto Imposto de renda.: " + irDescontado);
 		System.out.println(".....Desconto INSS.: " + inssDescontado);
 		System.out.println(".....Desconto Sindicato.: " + sincatoDescontado);
+		System.out.println(".....Total de Descontos.: " + totalDescontos);
 		System.out.println("..........Salário liquido.: " + salarioLiquido);
 		
 		

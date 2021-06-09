@@ -14,10 +14,10 @@ public class Exec2 {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Digite um número.: ");
+		System.out.println("Digite um número inteiro.: ");
 		int numero = scan.nextInt();
 		
-		System.out.println("O número informado foi " + numero);
+		System.out.println("O número informado foi: " + numero);
 
 	}
 

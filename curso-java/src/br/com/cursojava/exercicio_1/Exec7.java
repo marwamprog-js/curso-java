@@ -16,14 +16,12 @@ public class Exec7 {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Informe a altura do quadrado.: ");
-		double altura = scan.nextDouble();
+		System.out.println("Informe o lado do quadrado.: ");
+		double lado = scan.nextDouble();
+				
+		double area = Math.pow(lado, 2); 
 		
-		System.out.println("Informe a altura do quadrado.: ");
-		double largura = scan.nextDouble();
-		
-		double area = altura * largura;
-		
+		System.out.println("Área do quadrado.: " + area);
 		System.out.println("Área do quadrado em dobro.: " + (area * 2));
 	}
 

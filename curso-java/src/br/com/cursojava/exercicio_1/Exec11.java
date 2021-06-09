@@ -29,7 +29,7 @@ public class Exec11 {
 		System.out.println("Informe um número real.: ");
 		double num3 = scan.nextDouble();
 		
-		double resultQuestaoA = (num1 * 2) + (num2 / 2);
+		double resultQuestaoA = (num1 * 2) * (num2 / 2);
 		double resultQuestaoB = (num1 * 3) + (num3);
 		double resultQuestaoC = Math.pow(num3, 3);
 		
