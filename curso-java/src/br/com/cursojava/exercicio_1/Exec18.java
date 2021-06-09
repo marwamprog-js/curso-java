@@ -24,6 +24,7 @@ public class Exec18 {
 		double tempo = (tamanhoArquivo / velocidadeInternet) * 60;
 		
 		System.out.println("Tempo de download: " + tempo);
+		/**/
 		
 	}
 	
