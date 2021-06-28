@@ -3,10 +3,11 @@ package br.com.cursojava.outros.classes;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Aluno {
+public class Aluno extends Pessoa{
 
-	private String nome;
-	private String cpf;
+	private String dataMatricula;
+	private String nomeEscola;
+	private String serieMatriculado;
 	
 	private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
 	
@@ -15,17 +16,39 @@ public class Aluno {
 		super();
 	}
 	
+	
+	public String getDataMatricula() {
+		return dataMatricula;
+	}
+	public void setDataMatricula(String dataMatricula) {
+		this.dataMatricula = dataMatricula;
+	}
+	public String getNomeEscola() {
+		return nomeEscola;
+	}
+	public void setNomeEscola(String nomeEscola) {
+		this.nomeEscola = nomeEscola;
+	}
+	public String getSerieMatriculado() {
+		return serieMatriculado;
+	}
+	public void setSerieMatriculado(String serieMatriculado) {
+		this.serieMatriculado = serieMatriculado;
+	}
+
+
+
 	public String getNome() {
-		return nome;
+		return super.nome;
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 	public String getCpf() {
-		return cpf;
+		return numeroCpf;
 	}
 	public void setCpf(String cpf) {
-		this.cpf = cpf;
+		this.numeroCpf = cpf;
 	}
 	public void setDisciplinas(List<Disciplina> disciplinas) {
 		this.disciplinas = disciplinas;
@@ -50,14 +73,14 @@ public class Aluno {
 	
 	@Override
 	public String toString() {
-		return "Aluno [nome=" + nome + ", cpf=" + cpf + "]";
+		return "Aluno [nome=" + nome + ", cpf=" + numeroCpf + "]";
 	}
 	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((cpf == null) ? 0 : cpf.hashCode());
+		result = prime * result + ((numeroCpf == null) ? 0 : numeroCpf.hashCode());
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
 		return result;
 	}
@@ -72,10 +95,10 @@ public class Aluno {
 		if (getClass() != obj.getClass())
 			return false;
 		Aluno other = (Aluno) obj;
-		if (cpf == null) {
-			if (other.cpf != null)
+		if (numeroCpf == null) {
+			if (other.numeroCpf != null)
 				return false;
-		} else if (!cpf.equals(other.cpf))
+		} else if (!numeroCpf.equals(other.numeroCpf))
 			return false;
 		if (nome == null) {
 			if (other.nome != null)

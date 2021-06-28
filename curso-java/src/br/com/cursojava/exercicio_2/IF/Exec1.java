@@ -2,7 +2,7 @@
 1. Faça um Programa que peça dois números e imprima o maior deles.
 */
 
-package br.com.cursojava.exercicio_2;
+package br.com.cursojava.exercicio_2.IF;
 
 import java.util.Scanner;
 

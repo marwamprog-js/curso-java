@@ -4,7 +4,7 @@ positivo ou negativo.
 */
 
 
-package br.com.cursojava.exercicio_2;
+package br.com.cursojava.exercicio_2.IF;
 
 import java.util.Scanner;
 
